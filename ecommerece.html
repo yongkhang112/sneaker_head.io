@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khang Sneaker</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/?size=80&id=RDWRpkx9hYbO&format=png" type="image/x-icon">
+  <!--Box icons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.js"></script>
+  <!-- style css-->
+  <link rel="stylesheet" href="abc.css">
+</head>
+
+<body>
+  <!--Header-->
+  <header>
+    <!--Nav-->
+    <div class="nav container">
+      <a href="#" class="logo" style="color: white; font-size: large;"><b><span
+            style="color: rgb(239, 82, 218); font-size: large;">Sneaker</span><span></span></b></a>
+      <a href="#slide" style="color: rgb(78, 15, 203); font-size: large;"><b>HOME</b></a>
+      <a href="#items" style="color: rgb(83, 5, 238); font-size: large;"><b>ITEMS</b></a>
+      <a href="#contact_us" style="color: rgb(6, 148, 176); font-size: large;"><b>CONTACT US</b></a>
+      <!--Cart icons-->
+      <i class='bx bx-shopping-bag' id="cart-icon"></i>
+      <!--CArt-->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!--Content-->
+        <div class="cart-content">
+          <!--Test box-->
+        </div>
+        <!--Total-->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!--Buy button-->
+        <button type="button" class="btn-buy">Buy now</button>
+        <!--Cart close-->
+        <i class='bx bxs-x-square' id="cart-close"></i>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!--Creat Slide-->
+  <main>
+    <div class="w3-content w3-section" id="slide" style="padding: 5%;">
+      <h1 style="text-align: center;  font-size: 60px; color: rgb(173, 21, 97);"><span
+          style="color: rgb(80, 232, 10); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">WELCOME</span>
+        <span
+          style="color: rgb(218, 12, 159); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">TO</span>
+        <span style="color: rgb(20, 94, 128); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">WORLD
+        </span>
+        <span style="color: rgb(128, 9, 9); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">OF
+        </span>
+        <span
+          style="color: rgb(182, 67, 13); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">SNEAKER</span>
+      </h1>
+      <img class="mySlides" src="image/n3.webp" style="width:100%" height="850px">
+      <img class="mySlides" src="image/n4.webp" style="width:100%" height="850px">
+      <img class="mySlides" src="image/n5.webp" style="width:100%" height="850px">
+      <img class="mySlides" src="image/n6.jpg" style="width:100%" height="850px">
+      <img class="mySlides" src="image/n7.jpeg" style="width:100%" height="850px">
+      <img class="mySlides" src="image/nike 3.webp" style="width:100%" height="850px">
+      <img class="mySlides" src="image/nike1.png" style="width:100%" height="850px">
+      <img class="mySlides" src="image/21.avif" style="width: 100%" height="850px">
+    </div>
+
+    <!--Creat style fo slde-->
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <!-- End Creat style fo slde-->
+  </main>
+
+  <!-- List of table content-->
+  <!--SHOP SECTION-->
+  <section class="shop container" id="items" >
+    <h2 class="section-title"
+      style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 40px; color: rgb(66, 6, 77); ">
+      Shop Products</h2>
+    <!--Content-->
+    <div class="shop-content">
+      <!--Box1-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="image/surpreme.webp" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title">air force 1 low surpreme white</h2>
+        <span class="product-price">$127.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--Box2-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="image/dunk low off white lot2.webp" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title">Dunk Low Off-White lot 2</h2>
+        <span class="product-price">$489.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--Box3-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="image/sean cliver Nike SB.jpg" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title"> Nike SB Dunk Low Sean Cliver</h2>
+        <span class="product-price">$404.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <!--Box4-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="image/Nike SB Dunk High Humidity.webp" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title">Nike SB Dunk High Humidity</h2>
+        <span class="product-price">$249.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--Box5-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="image/Nike UNC.webp" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title"> Nike Dunk Low UNC 2024</h2>
+        <span class="product-price">$119.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--Box6-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="image/Nike Lebron 4.webp" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title">Nike Lebron 4 Fruity Pebbles 2024</h2>
+        <span class="product-price">$296.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--Box 7-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="image/Nike-Air-Force-1-Low-Off-White-MCA-University-Blue-Product.webp" alt="" class="product-img"
+          style="background-color:rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title"> Air Force 1 Low Off-White MCA University Blue</h2>
+        <span class="product-price">$2199.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <!--Box 8-->
+      <div class="product-box" style="background-color: rgb(207, 208, 229); padding: 10px;">
+        <img src="image/Air-Jordan-1-Retro-High-Dior-Product.webp" alt="" class="product-img"
+          style="background-color: rgb(135, 128, 136); padding: 10px;">
+        <h2 class="product-title">Jordan 1 Retro High Dior Limited Edition</h2>
+        <span class="product-price">$9469.99</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer section start-->
+  <footer>
+    <section class="footer" id="contact_us">
+      <div class="box-container">
+        <div class="box">
+          <h3 style="color: rgb(21, 158, 162);">Quick Link</h3>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Products</a>
+          <a href="#">Review</a>
+          <a href="#">Contact</a>
+        </div>
+        
+        <div class="box">
+          <h3 style="color: rgb(31, 174, 15);">Locations</h3>
+          <a href="#">Phnom penh</a>
+          <a href="#">Battambang</a>
+          <a href="#">Siem Reap</a>
+          <a href="#">Preah Sihanuk</a>
+        </div>
+        <div class="box">
+          <h3 style="color: rgb(250, 160, 5);">Contact Information</h3>
+          <a href="">+855-12-12-12-12</a>
+          <a href="">worldofsneaker168@gmail.com</a>
+          <a href="#">Main Location:<br><span1>No.44B, Street 261, Somnong 12, Toul Kouk, Phnom Penh</span1></a><br>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIXtjCmzBdGkW935eu-opp-6uKZhEGXZyxAA&usqp=CAU"
+            alt="" width="4px">
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- Footer section end-->
+
+
+  <!--Link js-->
+  <script src="./e.js"></script>
+</body>
+
+</html>
